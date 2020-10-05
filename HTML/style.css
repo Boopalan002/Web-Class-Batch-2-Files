@@ -1,0 +1,90 @@
+		div#div1
+		{
+			background-color: green;
+		}
+		div#div2
+		{
+			background-color: orange;
+		}
+		div#div3
+		{
+			background-color: #0843A8;
+			color:#bacdae;
+		}
+		img.img1
+		{
+			border:3px ridge red;
+			vertical-align:middle;
+			margin:10px 0px 0px;
+		}
+		p a#a1
+		{
+			color:green;
+			text-decoration:line-through;
+		}
+		p#p1 a
+		{
+			color:red;
+		}
+ul
+{
+	list-style-type:square;
+	background-color: green;
+	padding:5px;
+}
+ul li
+{
+	background-color: pink;
+	margin:10px 100px;
+}
+a#glink, a#flink /*Selctor = HTML Elements*/
+{
+	text-decoration: none;
+	background-color:grey;
+	color:black;
+	padding:3px;
+	border-radius:2px;
+}
+a#glink:hover
+{
+	background-color: red;
+	color:yellow;
+}
+a#glink:link
+{
+	background-color:blue;
+	color:white;
+}
+a#glink:visited
+{
+	background-color:orange;
+	color:white;
+}
+a#glink:active
+{
+	background-color: black;
+	color:white;
+}
+a#flink:hover
+{
+	background-color: pink;
+	color:violet;
+}
+
+td#t1
+{
+	background-color: blue;
+}
+table tr
+{
+	text-align:center;
+}
+table, tr, th, td
+{
+	border:2px solid black;
+	border-collapse: collapse;
+}
+tr:hover
+{
+	background-color: grey;
+}
