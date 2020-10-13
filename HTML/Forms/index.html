@@ -4,11 +4,12 @@
 	<title>HTML Forms</title>
 </head>
 <body>
-<h1>Registration Form</h1>
-<form action="" name="myForm" method="get" target="">
+<fieldset>
+	<legend>Registration Form</legend>
+<form action="myform.php" name="myForm" method="post" target="_blank">
 	<table border="1" style="border-collapse:collapse;">
 		<tr>
-			<th>Enter your Name:</th>
+			<th><label style="color:red;">Enter your Name:</label></th>
 			<th><input type="text" name="txt1" placeholder="Type your Fullname"></th>
 		</tr>
 		<tr>
@@ -30,10 +31,53 @@
 				<input type="checkbox" name="h3" value="books">Reading books</th>
 		</tr>
 		<tr>
+			<th>Select your Colour:</th>
+			<th><input type="color" name=""></th>
+		</tr>
+		<tr>
+			<th>Select the date:</th>
+			<th><input type="datetime-local" name=""></th>
+		</tr>
+		<tr>
+			<th>Select the range of number:</th>
+			<th><input type="number" min="1" max="10" name=""></th>
+		</tr>
+		<tr>
+			<th>Select your Course:</th>
+			<th><select>
+				<option value="-1">--Please select your course--</option>
+				<optgroup label="Science Course">
+					<option value="bca" selected>BCA</option>
+					<option value="bca">B.Sc. CS</option>
+				</optgroup>
+				<optgroup label="Commerce Course">
+					<option value="bcom">BCOM</option>
+				</optgroup>
+				<optgroup label="Management Course">
+					<option value="bba">BBA</option>
+				</optgroup>
+			</select></th>
+		</tr>
+
+		<tr>
+			<th>Address:</th>
+			<th>
+				<textarea rows="5" cols="50"></textarea>
+			</th>
+		</tr>
+		<tr>
+			<th>Attach file:</th>
+			<th>
+				<input type="file" name="file1">
+			</th>
+		</tr>
+		<tr>
 			<th><input type="submit" name="submit1" value="SUBMIT"></th>
 			<th><input type="reset" name="reset1" value="RESET"></th>
 		</tr>
+
 	</table>
 </form>
+</fieldset>
 </body>
 </html>
